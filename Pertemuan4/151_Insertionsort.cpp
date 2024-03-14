@@ -73,7 +73,7 @@ void insertionsort() {													// Prosedure insetionsort
 
 	int main()
 	{
-		input();													// Memanggil input
+		input();															// Memanggil input
 		insertionsort();													// memanggil insertionsort
 		display();															// Memanggil display
 	}
