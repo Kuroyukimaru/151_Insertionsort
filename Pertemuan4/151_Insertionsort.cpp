@@ -43,9 +43,9 @@ void insertionsort() {													// Prosedure insetionsort
 		j = i - 1;														// 3. Setting nilai j sama dengan i-1
 
 		while (j >= 0 && arr[j] > temp)									// 4. Looping while dimana nilai j lebih besar sama dengan 0 dan arr[j] lebih besar daripada temp
-																		// arr[j] lebih besar dari pada temp
+			// arr[j] lebih besar dari pada temp
 		{
-			arr[j + 1]= arr[j];										// 4a. Simpan arr[j] ke dalam variable arr[j+1]
+			arr[j + 1] = arr[j];										// 4a. Simpan arr[j] ke dalam variable arr[j+1]
 			j--;														// 4b. Decrement nilai j by 1
 		}
 		arr[j + 1] = temp;												// 5. Simpan nilai temp ke dalam arr[j+1]
@@ -54,4 +54,19 @@ void insertionsort() {													// Prosedure insetionsort
 		for (int k = 0; k < n; k++) {									// Looping nilai k dimulai dari 0 hingga n-1
 			cout << arr[k] << " ";										// Output ke layar
 		}
+	}
+}
+
+	void display() {														// Procedire Display
+
+		cout << endl;														// Output ke layar
+		cout << "/n=================================" << endl;				// Output ke layar
+		cout << "Element Array yang telah tersusun" << endl;				// Output ke layar
+		cout << "=================================" << endl;				// Output ke layar
+
+		for (int j = 0; j < n; j++) {										// Looping dengan j dimullai dari 0 hingga n-1
+			cout << arr[j] << endl;											// Output ke layar
+		}
+		cout << endl;														// Output baris kosong
+
 	}
