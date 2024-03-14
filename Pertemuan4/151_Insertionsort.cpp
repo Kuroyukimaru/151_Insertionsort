@@ -70,3 +70,10 @@ void insertionsort() {													// Prosedure insetionsort
 		cout << endl;														// Output baris kosong
 
 	}
+
+	int main()
+	{
+		input();													// Memanggil input
+		insertionsort();													// memanggil insertionsort
+		display();															// Memanggil display
+	}
